@@ -143,6 +143,40 @@ html{
     height: 500px;
 
 }
+#content .section-content{
+    width: 800px;
+    padding-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-height: 670px; */
+
+}
+
+#content .section-heading{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#content .section-sub-heading{
+    /* chỉnh đậm nhạt màu băng opacity chạy từ 0->1*/
+    opacity: 0.6;
+    font-style: italic;
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+#content .about-content{
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
 
 #footer{
 
