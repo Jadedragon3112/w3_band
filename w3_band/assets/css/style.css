@@ -1,0 +1,150 @@
+/* reset css */
+/* Lưu trư trữ các biến */
+:root{
+    --height_heading : 46.5px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+
+}
+/* search btn thẻ div */
+
+
+#header{
+    /* cho thanh header đứng im */
+    /* z - index điều chỉnh độ sâu */
+    z-index: 1;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--height_heading);
+    background-color: black;
+    color: white;
+
+
+}
+
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+/* arrow_down icon */
+#nav .nav_arrow_down{
+    font-size: 12px;
+}
+/* danh sach navgition li */
+#nav li{
+    position: relative;
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    min-width: 160px;
+    display: block;
+}
+/* the a */
+#nav > li > a{
+    text-transform: uppercase;
+    color: white;
+
+}
+#nav li a{
+    text-decoration: none;
+    line-height: var(--height_heading) ;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+}
+/* thuực hiện hành động hover */
+#nav .subnav li:hover,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+   display: block;
+}
+/* the li phu */
+#nav .subnav{
+    left: 0;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: none;
+    background-color:#fff;
+}
+
+#nav .subnav a{
+    line-height: 38px;
+    padding-left: 20px;
+    color: #000;
+}
+#header .search_btn{
+    padding: 0 21px;
+    float:right;
+}
+#header .search_btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+#header .search_icon {
+    padding:14 15;
+    line-height: var(--height_heading);
+    color: #fff;
+    font-size: 20px;
+}
+
+#slider{
+    /* heigth = 50% width */
+    padding-top: 50%;
+    height: 400px;
+    margin-top: var(--height_heading);
+    /* background-color: gray; */
+    background: url('/w3_band/assets/img/chicago.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading{
+    margin: 25px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-description{
+    /* chỉnh độ đày chữ chạy từ 100->900 */
+    
+    font-size: 15px;
+}
+
+#content{
+    height: 500px;
+
+}
+
+#footer{
+
+}
+
