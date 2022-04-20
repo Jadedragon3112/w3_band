@@ -26,7 +26,7 @@
 
 /* nửa cột */
 .half-colum{
-    width: calc(100%/2);
+    width: calc(50%);
 }
 
 /* full cột */
@@ -192,6 +192,7 @@ html{
 
 }
 #content .section-content{
+    min-height: 400px;
     width: 800px;
     padding-top: 64px;
     margin-left: auto;
@@ -351,8 +352,50 @@ html{
     color: #fff;
     padding: 11px 16px;
 }
-
+bac
 .list-place .js-button-buy-ticket:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* contact */
+.form-contact{
+    margin-top: 48px;
+}
+
+/* left-row */
+.left-row{
+    line-height: 1.5;
+    font-size: 18px;
+}
+/* right-row */
+.right-row{
+    font-size: 15px;
+}
+/* padding icon */
+.form-contact .row i{
+    display: inline-block;
+    padding-right: 12px;
+}
+.form-control{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.Message-text{
+    margin-top: 8px;
+}
+/* btn-submit */
+.btn-submit{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-submit:hover{
     background-color: #ccc;
     color: #000;
 }
