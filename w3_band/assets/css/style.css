@@ -4,6 +4,47 @@
     --height_heading : 46.5px;
 
 }
+/* common */
+
+/* hàng */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* cột */
+.colum{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* 3 cột */
+.third-colum{
+    width: calc(100%/3);
+}
+
+/* nửa cột */
+.half-colum{
+    width: calc(100%/2);
+}
+
+/* full cột */
+.full-colum{
+    width: 100%;
+}
+
+
+/* căn giữa */
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -189,13 +230,6 @@ html{
     margin-bottom: 96px;
 }
 
-#content .member-item{
-    width: calc(100%/3);
-    /* chỉnh ảnh nằm ngang 1 dòng bằng lệnh float */
-    float: left;
-    text-align: center;
-}
-
 #content .member-name{
     font-size: 15px;
     
@@ -262,11 +296,11 @@ html{
 }
 
 /* khung mỗi place */
-.list-place .section-place{
+/* .list-place .section-place{
     padding: 0 8px;
     width: calc(100%/3);
     float :left;
-}
+} */
 
 /* ảnh */
 .list-place .place-image{
@@ -304,7 +338,8 @@ html{
     
 }
 
-.list-place .btn-buy-ticket{
+.list-place .js-button-buy-ticket{
+    border: none;
     margin-top: 15px;
     /* font-size: 15px; */
     /* text-align: center; */
@@ -317,7 +352,7 @@ html{
     padding: 11px 16px;
 }
 
-.list-place .btn-buy-ticket:hover{
+.list-place .js-button-buy-ticket:hover{
     background-color: #ccc;
     color: #000;
 }
@@ -328,3 +363,124 @@ html{
 
 }
 
+/* class modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/* tao modal.open khi js bắt sưj iện sẽ gọi đến css này show modal-container */
+.modal.open{
+    display: flex;
+}
+
+/* modal container */
+.modal-container {
+    max-width: calc(100% - 64px);
+    padding-bottom: 12px;
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    /* tao animation */
+    animation: modalAnimation ease 0.6s;
+}
+
+/* icon close */
+.icon-close{
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+/* hover */
+.icon-close:hover{
+    background-color: red;
+}
+
+/* header */
+/* modal header */
+.modal-header {
+    color: #fff;
+    font-size: 30px;
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* icon padding bag */
+.icon-header{
+    padding-right: 16px;
+
+}
+/* body */
+.modal-body {
+    padding: 16px;
+}
+
+label {
+    font-size: 15px;
+    display: block;
+}
+
+/* input text quantity */
+.quantity-ticket {
+    padding: 8px;
+    margin-top: 7px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 19px;
+}
+/* input email */
+.email {
+    padding: 8px;
+    margin-top: 7px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 19px;
+}
+/* button pay */
+.pay {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #009688;
+    height: 45px;
+    width: 100%;
+    border: none;
+    color: #fff;
+}
+.pay:hover{
+    opacity: 0.6;
+}
+
+/* footer */
+.Need-help {
+    float: right;
+    padding-right: 13px;
+}
+
+.Need-help a{
+    color: #2196F3;
+}
+
+
+/* Tao chuyen dong */
+@keyframes modalAnimation {
+    from {
+        transform: translateY(-182px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
