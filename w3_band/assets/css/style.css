@@ -70,6 +70,8 @@ html{
 #header{
     /* cho thanh header đứng im */
     /* z - index điều chỉnh độ sâu */
+    /* overflow khi thẻ con vượt ngoài thẻ cha sẽ bị ẩn */
+    overflow: hidden;
     z-index: 1;
     position: fixed; 
     top: 0;
@@ -82,6 +84,7 @@ html{
 
 
 }
+
 
 #nav{
     display: inline-block;
@@ -137,10 +140,23 @@ html{
     padding-left: 20px;
     color: #000;
 }
+/* button menu on mobile */
+#header .menu-mobile {
+    font-size: 20px;
+    padding: 14px;
+    float: right;
+}
+#header .menu-mobile:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* button search */
 #header .search_btn{
     padding: 0 21px;
     float:right;
 }
+
 #header .search_btn:hover{
     cursor: pointer;
     background-color: #f44336;
@@ -193,12 +209,15 @@ html{
 
 }
 #content .section-content{
+    padding-left: 16px;
+    max-width: 100%;
     min-height: 400px;
     width: 800px;
     padding-top: 64px;
     margin-left: auto;
     margin-right: auto;
     /* min-height: 670px; */
+    padding-right: 16px;
 
 }
 
@@ -554,3 +573,5 @@ label {
         transform: translateY(0px);
     }
 }
+
+

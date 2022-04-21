@@ -34,3 +34,21 @@ getModal.addEventListener('click',hideContainer)
 getContainer.addEventListener('click', function(e){
     e.stopPropagation()
 })
+
+// get header responsive mobile
+var getHeader = document.querySelector('#header')
+var menuButton = document.querySelector('.menu-mobile')
+// lấy giá trị chiều cao
+var currentHeight = getHeader.clientHeight
+// click menu
+menuButton.addEventListener('click',function(){
+    // Chiều cao header ban đầu là 47 nên thẻ sẽ đóng
+    var currentClose = getHeader.clientHeight === currentHeight
+    if(currentClose){
+        getHeader.style.height = 'auto'
+    }
+    else{ //nếu lấy giá trị thông qua height khác 47 sẽ gán lại header bằng gtri ban đầu để đóng
+        getHeader.style.height = '47px'
+    }
+    
+})
