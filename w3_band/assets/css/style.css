@@ -353,8 +353,9 @@ html{
     color: #fff;
     padding: 11px 16px;
 }
-bac
+
 .list-place .js-button-buy-ticket:hover{
+    cursor: pointer;
     background-color: #ccc;
     color: #000;
 }
