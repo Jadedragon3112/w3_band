@@ -48,7 +48,17 @@ menuButton.addEventListener('click',function(){
         getHeader.style.height = 'auto'
     }
     else{ //nếu lấy giá trị thông qua height khác 47 sẽ gán lại header bằng gtri ban đầu để đóng
-        getHeader.style.height = '47px'
+        getHeader.style.height = null
     }
     
 })
+
+// sau khi click vào menu sẽ ẩn menu đi 
+// lấy cấc thẻ a
+var getItems = document.querySelectorAll('#nav li a[href *= "#"]')
+// tạo vòng lặp bắt sự kiện khi nhấn vào từng thẻ a
+for (var Item of getItems){
+    Item.addEventListener('click',function(){
+        getHeader.style.height = null
+    })
+}

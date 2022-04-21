@@ -18,5 +18,8 @@
     #header .search_btn{
         display: none;
     }
+    .menu-mobile {
+        display: block;
+    }
     
 }

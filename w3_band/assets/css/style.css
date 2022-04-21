@@ -66,7 +66,9 @@ html{
 }
 /* search btn thẻ div */
 
-
+.menu-mobile {
+    display: none;
+}
 #header{
     /* cho thanh header đứng im */
     /* z - index điều chỉnh độ sâu */
