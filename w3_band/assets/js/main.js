@@ -56,9 +56,19 @@ menuButton.addEventListener('click',function(){
 // sau khi click vào menu sẽ ẩn menu đi 
 // lấy cấc thẻ a
 var getItems = document.querySelectorAll('#nav li a[href *= "#"]')
+
 // tạo vòng lặp bắt sự kiện khi nhấn vào từng thẻ a
 for (var Item of getItems){
-    Item.addEventListener('click',function(){
-        getHeader.style.height = null
+    Item.addEventListener('click',function(e){
+        var getMenuMore = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav') // kiểm tra có chứa lớp subnav không
+        if(getMenuMore){
+            e.preventDefault()
+        }
+        else{
+            getHeader.style.height = null
+        }
     })
 }
+
+
+// lấy selector More
