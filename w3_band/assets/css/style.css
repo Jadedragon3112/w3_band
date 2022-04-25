@@ -418,6 +418,18 @@ html{
     border: 1px solid #ccc;
     padding: 10px;
 }
+
+/* bao loi form input */
+.form-control.error{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+
+
+
+
 .Message-text{
     margin-top: 8px;
 }
@@ -588,5 +600,44 @@ label {
         transform: translateY(0px);
     }
 }
+
+
+
+/* bao loi input form */
+.error-name{
+    display: none;
+    font-size: 13px;
+    color: red;
+}
+
+.error-email{
+    display: none;
+    font-size: 13px;
+
+    color: red;
+
+}
+
+.error-message{
+    display: none;
+    font-size: 13px;
+
+    color: red;
+
+}
+
+.error-name.error{
+    display: block;
+}
+
+.error-email.error{
+    display: block;
+}
+
+.error-message.error{
+    display: block;
+}
+
+
 
 
